@@ -1,0 +1,84 @@
+.page__header {
+    background: url(../assets/practical1.jpg) center center/cover;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    gap:4rem;
+    
+}
+
+.nav_menu-open
+{
+    display:none;
+}
+
+.nav_menu-close
+{
+    display:none;
+}
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50vw;
+    margin-bottom: 7rem;
+}
+
+.faq {
+    background: var(--color-gray-0);
+    width: 100%;
+    cursor: pointer;
+    align-self: flex-start;
+    border-radius: var(--radius-3);
+    transition: var(--transition);
+}
+
+.faq__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.faq__head i {
+    font-size: 1.6rem;
+}
+
+.faq p {
+    padding: 1rem 2rem;
+    border-top: 2px solid var(--color-gray-50);
+    display: none;
+}
+
+.faq.show {
+    background: var(--color-primary);
+    color: var(--color-gray-0);
+}
+
+.faq.show h5 {
+    color: var(--color-gray-0);
+}
+
+.faq.show p {
+    display: block;
+}
+
+.faq a {
+    align-self: center;
+    margin-top: 2rem;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .faqs {
+        width: var(--container-w-md);
+        margin: 4rem auto;
+    }
+    
+}

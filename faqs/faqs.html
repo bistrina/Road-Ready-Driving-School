@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Road Ready Academy</title>
+    <!--SWIPER JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./faqs.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="./index.html" class="nav__logo">Road Ready</a>
+            <div class="nav_content">
+                <menu class="nav_menu">
+                    <a href="../index.html">Home</a>
+                    <a href="../about/about-us.html">About</a>
+                    <a href="../gallery/gallery.html">Gallery</a>
+                    <a href="../programs/programs.html">Programs</a>
+                    <a href="../faqs.html" class="active">FAQS</a>
+                    <a href="../contact/contact.html">Contact</a>
+                </menu>
+                 
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <header class="page__header">
+        <div class="page__header-content">
+            <h2>frequently Asked Questions</h2>
+            <p><b>Find quick answers about our courses, schedules, fees, license preparation, and training methods. Clear your doubts and get all essential information to start your driving journey confidently.</b></p>
+        </div>
+    </header>
+
+
+
+
+
+
+    <menu class="container faqs">
+        <article class="faq">
+            <div class="faq__head">
+                <h5>How long does the Regular Learning program take?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                The Regular Learning program usually takes 4–6 weeks, depending on class frequency and the learner’s progress.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>Do I need prior driving experience to join?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                No, our courses are designed for complete beginners as well as experienced learners who need polishing.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>What documents are required to enroll?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                You will need age proof, ID proof, and address proof (such as Aadhaar, Voter ID, or Passport).
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>Is the License Program guaranteed to help me pass?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                We cannot guarantee results, but our mock tests, practical sessions, and expert guidance significantly increase your chances of passing on the first attempt.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>Can I choose flexible timings?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Yes, we offer both weekday and weekend batches with morning and evening slots to suit your schedule.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>Do you provide vehicles for practice?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Yes, we provide dual-control training cars for all practical lessons to ensure safety and confidence.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>What is the difference between Express Learning and Regular Learning?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Express Learning is an intensive, short-duration course for faster results, while Regular Learning offers a more gradual and detailed approach.
+            </p>
+        </article>
+        <article class="faq">
+            <div class="faq__head">
+                <h5>Can women learners request female instructors?</h5>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <p>
+                Yes, female instructors are available on request to make women learners feel more comfortable and confident.
+            </p>
+        </article>
+
+        <a href="mailto:youremail@gamil.com" class="btn primary" target="_blank">Have more Questions? Ask us directly ! </a>
+    </menu>
+
+
+
+
+
+
+
+
+
+    <!--========================= FOOTER =========================--> 
+    <footer>
+        <div class="container footer__container">
+            <menu class="footer__menu">
+                <a href="#">Privacy</a>
+                <a href="#">Terms and conditions</a>
+                <a href="#">Other Interest</a>
+            </menu>
+            <menu class="footer__social">
+                <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="uil uil-twitter"></i></a>
+            </menu>
+        </div>
+        <small class="footer__copyright">
+            I create the driving website
+        </small>
+    </footer>
+
+
+    <script>
+        const faqs = document.querySelectorAll('.faq')
+        faq.array.forEach(faq => {
+            faq.addEventListener('click', () => {
+                faq.classList.toggle('show')
+                if(faq.classList.contains('show')) {
+                    faq.querySelector('i').className = "uil uil-angle-up"
+                } else{
+                    faq.querySelector('i').className = "uil uil-angle-down"
+
+                }
+            })
+        });
+    </script>
+    
+
+    <script src="/faqs/faqs.js"></script>
+</body>
